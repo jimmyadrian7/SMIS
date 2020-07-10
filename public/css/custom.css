@@ -1,0 +1,34 @@
+.btn-purple {
+	background-color: #F5E6FE;
+	color: #BE63F9;
+}
+.btn-purple:hover {
+	background-color: #E7BEFF;
+		color: #BE63F9;
+}
+
+.btn-orange {
+	background-color: #FFE6E2;
+	color: #FC573B;
+}
+.btn-orange:hover {
+	background-color: #FFC6BC;
+	color: #FC573B;
+}
+
+.btn-cyan {
+	background-color: #E3F8FA;
+	color: #26C6DA;
+}
+.btn-cyan:hover {
+	background-color: #B9F9FF;
+	color: #26C6DA;
+}
+
+.btn-square {
+	padding: 5px 12px;
+}
+
+.custom-shadow {
+	box-shadow: 1px 2px 4px #b9b9b9;
+}
