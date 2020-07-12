@@ -1,0 +1,42 @@
+.custom-shadow {
+	box-shadow: 1px 2px 4px #b9b9b9;
+}
+
+.ch-7 {
+	height: 7px;
+}
+
+.fixed-width {
+  width: 100px;
+}
+
+.fixed-height {
+  height: 75%;
+}
+
+.fixed-top-bottom {
+  top: 10em;
+  bottom: 0;
+}
+
+.left-item {
+  cursor: pointer;
+}
+
+.left-item:hover {
+  background: #F7F7F7;
+}
+
+.left-item.active {
+  background-color: #F1F1F1;
+}
+
+.left-item.active::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  background: blue;
+  left: 0;
+  top: 0;
+  height: 100%;
+}

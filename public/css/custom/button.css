@@ -1,0 +1,12 @@
+.btn-orange {
+	background-color: #FFE6E2;
+	color: #FC573B;
+}
+.btn-orange:hover {
+	background-color: #FFC6BC;
+	color: #FC573B;
+}
+
+.btn-square {
+	padding: 5px 12px;
+}
