@@ -9,28 +9,36 @@
 .fixed-width {
   width: 100px;
 }
-
 .fixed-height {
   height: 75%;
 }
-
 .fixed-top-bottom {
   top: 7em;
   bottom: 0;
+}
+.full-fixed-container{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.floating-div {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
 }
 
 .left-item {
   cursor: pointer;
 }
-
 .left-item:hover {
   background: #F7F7F7;
 }
-
 .left-item.active {
   background-color: #F1F1F1;
 }
-
 .left-item.active::after {
   content: '';
   position: absolute;
