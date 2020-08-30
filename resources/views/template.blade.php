@@ -15,6 +15,7 @@
         {{-- Styles --}}
         <link href="{{ asset ('css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset ('css/font-awesome.min.css') }}" rel="stylesheet">
+        <link href="{{ asset ('css/select2.min.css') }}" rel="stylesheet">
         <link href="{{ asset ('css/custom/border.css') }}" rel="stylesheet">
         <link href="{{ asset ('css/custom/button.css') }}" rel="stylesheet">
         <link href="{{ asset ('css/custom/others.css') }}" rel="stylesheet">
@@ -22,8 +23,11 @@
 
         {{-- Script --}}
         <script src="{{ asset ('js/jquery.min.js') }}" defer="true"></script>
+        <script src="{{ asset ('js/bootstrap.min.js') }}" defer="true"></script>
+        <script src="{{ asset ('js/select2.full.min.js') }}" defer="true"></script>
         <script src="{{ asset ('js/custom/dragable.js') }}" defer="true"></script>
         <script src="{{ asset ('js/custom/admin.js') }}" defer="true"></script>
+        @stack('js')
 
     </head>
     <body class="p-0 m-0">
