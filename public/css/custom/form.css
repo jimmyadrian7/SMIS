@@ -11,3 +11,25 @@
     right: 3px;
     top: 1px;
 }
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.rowadd{
+    width:50px;
+    text-align: center;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+/* Chrome, Safari, Edge, Opera */
+.rowadd::-webkit-outer-spin-button,
+.rowadd::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.rowadd[type=number] {
+  -moz-appearance: textfield;
+}
