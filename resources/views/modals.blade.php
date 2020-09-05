@@ -29,6 +29,9 @@
             <div class="d-flex align-items-center row">
                 <div class="d-flex align-items-center col-sm-8 mb-3 font-weight-bold">
                     <div class="mr-sm-5">Number of Classroom(s)</div>
+                    <div class="px-4 py-2 mr-sm-1">
+                        <input class="rowadd" type="number" name="rowadd" id="rowadd" data-id="rowadd" value="5" min="1" max="20" maxlength="2" >
+                    </div>
                     <div class="px-3 py-1 bg-gray">5</div>
                 </div>
                 <div class="col-sm-4 text-right mb-3">
@@ -62,7 +65,7 @@
                 </div>
 
                 <div class="col-12 text-right">
-                    <button class="btn btn-light px-5 rounded-pill">Cancel</button>
+                    <button class="btn btn-light px-5 rounded-pill" data-dismiss="modal">Cancel</button>
                     <button class="btn btn-primary px-5 rounded-pill">Save</button>
                 </div>
                 

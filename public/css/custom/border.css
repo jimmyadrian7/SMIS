@@ -9,3 +9,11 @@
 .custom-rounded-right {
   border-radius: 0 15px 15px 0;
 }
+
+.hidden-scroll-x {
+  overflow-x: hidden;
+}
+
+.hidden-scroll-y {
+  overflow-y: hidden;
+}

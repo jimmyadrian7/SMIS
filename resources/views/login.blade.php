@@ -34,8 +34,8 @@
                     <input type="text" class="form-control" id="username" placeholder="Username" style="text-align: center">
                     <input type="text" class="form-control" id="password" placeholder="Password" style="text-align: center">
                     <a href="#"><p class="text-right text-primary">Forget Password?</p></a>
-                    <input type="button" class="btn btn-primary form-control badge-pill" value="Masuk">
-                    <a href="#"><p class="text-center text-secondary pt-4 text-lg">Need an Account?</p></a>
+                    <a href="dashboard"><input type="button" class="btn btn-primary form-control badge-pill" value="Masuk"></a>
+                    {{-- <a href="#"><p class="text-center text-secondary pt-4 text-lg">Need an Account?</p></a> --}}
                 </div>
             </div>
         </div>
