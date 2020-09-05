@@ -217,7 +217,7 @@
                 </div>
 
                 <div class="col-12 text-right">
-                    <button class="btn btn-light px-5 rounded-pill">Cancel</button>
+                    <button class="btn btn-light px-5 rounded-pill" data-dismiss="modal">Cancel</button>
                     <button class="btn btn-primary px-5 rounded-pill">Save Changes</button>
                 </div>
                 

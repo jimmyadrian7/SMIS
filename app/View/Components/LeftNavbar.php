@@ -14,15 +14,17 @@ class LeftNavbar extends Component
      */
     public function __construct()
     {
+        
+        $test =  trans('left_bar.dashboard');
         $this->navigations = [
-            ['name' => 'Dashboard', 'icon' => 'icons/dashboard_icon.svg' ],
-            ['name' => 'Manage',    'icon' => 'icons/rocket_icon.svg'    ],
-            ['name' => 'Subject',   'icon' => 'icons/book_icon.svg'      ],
-            ['name' => 'Classroom', 'icon' => 'icons/structure_icon.svg' ],
-            ['name' => 'Teacher',   'icon' => 'icons/connection_icon.svg'],
-            ['name' => 'Schedule',  'icon' => 'icons/calendar_icon.svg'  ],
-            ['name' => 'Student',   'icon' => 'icons/smile_icon.svg'     ],
-            ['name' => 'Tuition',   'icon' => 'icons/bubble_icon.svg'    ],
+            ['name' => trans('left_bar.dashboard'), 'icon' => 'icons/dashboard_icon.svg' ],
+            ['name' => trans('left_bar.manage'),    'icon' => 'icons/rocket_icon.svg'    ],
+            ['name' => trans('left_bar.subject'),   'icon' => 'icons/book_icon.svg'      ],
+            ['name' => trans('left_bar.classroom'), 'icon' => 'icons/structure_icon.svg' ],
+            ['name' => trans('left_bar.teacher'),   'icon' => 'icons/connection_icon.svg'],
+            ['name' => trans('left_bar.schedule'),  'icon' => 'icons/calendar_icon.svg'  ],
+            ['name' => trans('left_bar.student'),   'icon' => 'icons/smile_icon.svg'     ],
+            ['name' => trans('left_bar.tuition'),   'icon' => 'icons/bubble_icon.svg'    ],
         ];
     }
 

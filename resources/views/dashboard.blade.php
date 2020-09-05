@@ -94,9 +94,11 @@
                 <button type="button" class="px-3 btn btn-sm btn-link">
                   <i class="fa fa-eye"></i> View
                 </button>
-                <button type="button" class="px-3 btn btn-sm btn-success rounded-pill">
-                  <i class="fa fa-plus"></i> Add Class
-                </button>
+                <a href="/modals">
+                  <button type="button" class="px-3 btn btn-sm btn-success rounded-pill">
+                    <i class="fa fa-plus"></i> Add Class
+                  </button>
+                </a>
             </div>
           <!-- Right Side -->
         </x-card>
