@@ -26,7 +26,7 @@
             <div class="d-flex align-items-center row">
                 <div class="d-flex align-items-center col-sm-8 mb-3 font-weight-bold">
                     <div class="mr-sm-5">Number of Classroom(s)</div>
-                    <div class="px-4 py-2">5</div>
+                    <div class="px-3 py-1 bg-gray">5</div>
                 </div>
                 <div class="col-sm-4 text-right mb-3">
                     <button class="btn btn-success rounded-pill"><i class="fa fa-plus"></i> Add Column</button>
@@ -46,9 +46,10 @@
                     </div>
                     <div class="col-4">
                         <div class="form-group">
-                            <select name="" id="" class="form-control">
+                            <x-form.select :options="['1' => 'Kindergarden']" :value="1"/>
+                            {{-- <select name="" id="" class="form-control">
                                 <option value="">Kindergarden</option>
-                            </select>
+                            </select> --}}
                         </div>
                     </div>
                 @endfor

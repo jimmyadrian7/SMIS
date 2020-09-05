@@ -13,4 +13,6 @@ $(document).ready(function() {
     });
     $('.custom-input-text').change();
 
+    $('.smis-select').select2();
+
 });
