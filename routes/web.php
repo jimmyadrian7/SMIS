@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
+    Config::set('navActive', 'Dashboard');
     return view('dashboard');
 });
 
