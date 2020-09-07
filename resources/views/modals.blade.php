@@ -32,7 +32,6 @@
                     <div class="px-4 py-2 mr-sm-1">
                         <input class="rowadd" type="number" name="rowadd" id="rowadd" data-id="rowadd" value="5" min="1" max="20" maxlength="2" >
                     </div>
-                    <div class="px-3 py-1 bg-gray">5</div>
                 </div>
                 <div class="col-sm-4 text-right mb-3">
                     <button class="btn btn-success rounded-pill"><i class="fa fa-plus"></i> Add Column</button>
@@ -45,7 +44,7 @@
                 <div class="col-8"></div>
                 <div class="col-4 pb-3 font-weight-bold">Class Tier</div>
                 
-                @for ($i = 1; $i < 6; $i++)
+                @for ($i = 1; $i < 15; $i++)
                     <div class="col-12 d-flex align-items-center mb-3">
                         <div class="col-1 font-weight-bold">{{$i}}.</div>
                         <div class="col-7">

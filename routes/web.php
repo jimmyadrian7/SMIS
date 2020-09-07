@@ -18,11 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    App::setLocale('ind');
-    Config::set('navActive', 'Dashboard');
+    Config::set('navActive', trans('left_bar.dashboard'));
     return view('dashboard');
 });
 
 Route::get('/modals', function () {
+    Config::set('navActive', trans('left_bar.classroom'));
     return view('modals');
 });
