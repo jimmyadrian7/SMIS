@@ -19,13 +19,13 @@ class LeftNavbar extends Component
         //config::setlocale('ind');
         $this->navigations = [
             ['name' => trans('left_bar.dashboard'), 'icon' => 'icons/dashboard_icon.svg',   'url'=> 'dashboard'     ],
-            ['name' => trans('left_bar.manage'),    'icon' => 'icons/rocket_icon.svg',      'url'=> 'dashboard'     ],
-            ['name' => trans('left_bar.subject'),   'icon' => 'icons/book_icon.svg',        'url'=> 'dashboard'     ],
+            ['name' => trans('left_bar.manage'),    'icon' => 'icons/rocket_icon.svg',      'url'=> 'manage'     ],
+            ['name' => trans('left_bar.subject'),   'icon' => 'icons/book_icon.svg',        'url'=> 'subject'     ],
             ['name' => trans('left_bar.classroom'), 'icon' => 'icons/structure_icon.svg',   'url'=> 'modals'     ],
-            ['name' => trans('left_bar.teacher'),   'icon' => 'icons/connection_icon.svg',  'url'=> 'dashboard'     ],
-            ['name' => trans('left_bar.schedule'),  'icon' => 'icons/calendar_icon.svg',    'url'=> 'dashboard'     ],
-            ['name' => trans('left_bar.student'),   'icon' => 'icons/smile_icon.svg',       'url'=> 'dashboard'     ],
-            ['name' => trans('left_bar.tuition'),   'icon' => 'icons/bubble_icon.svg',      'url'=> 'dashboard'     ],
+            ['name' => trans('left_bar.teacher'),   'icon' => 'icons/connection_icon.svg',  'url'=> 'teacher'     ],
+            ['name' => trans('left_bar.schedule'),  'icon' => 'icons/calendar_icon.svg',    'url'=> 'schedule'     ],
+            ['name' => trans('left_bar.student'),   'icon' => 'icons/smile_icon.svg',       'url'=> 'student'     ],
+            ['name' => trans('left_bar.tuition'),   'icon' => 'icons/bubble_icon.svg',      'url'=> 'tuition'     ],
         ];
     }
 
