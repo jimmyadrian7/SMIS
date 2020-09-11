@@ -249,15 +249,19 @@
             <hr class="border-primary mb-3">
             
             <div class="d-flex row">              
-                @for ($i = 1; $i < 7; $i++)
-                    <div class="col-7 d-flex align-items-center mb-3">
-                        <div class="col-5 font-weight-bold text-muted">Subject Name</div>
-                        <div class="col-7">
-                            <x-Form.input value="TK Besar Butterjoy" placeholder="Class Name/ initial"/>
-                        </div>
+                <div class="d-flex row">
+                    <div class="col-7">
+                        @for ($i = 1; $i < 7; $i++)
+                            <div class="col-12 d-flex align-items-center mb-3">
+                                <div class="col-5 font-weight-bold text-muted">Subject Name</div>
+                                <div class="col-7">
+                                    <x-Form.input value="TK Besar Butterjoy" placeholder="Class Name/ initial"/>
+                                </div>
+                            </div>
+                        @endfor         
                     </div>
-                    @if ($i === 1)
-                        <div class="col-5 align-items-center text-muted">
+                    <div class="col-5">
+                        <div class="col-12 align-items-center text-muted">
                             <div class="text-primary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor">
                                     <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -266,9 +270,9 @@
                                 </svg>
                             </div>
                             <a href="#" class="text-primary">Extra Curricular Subjects</a> are enterirely option. You can skip this form by clicking the 'Save' button      
-                        </div>      
-                    @endif
-                @endfor          
+                        </div>     
+                    </div>
+                </div> 
                 <div class="col-12 mb-5">
                     <div class="btn btn-success rounded-pill">
                         <i class="fa fa-plus"></i>
