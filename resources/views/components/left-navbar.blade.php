@@ -7,7 +7,6 @@
 			<span class="small">{{$navigation['name']}}</span>
 		</div>
 	</a>
-
 	@endforeach
 
 </div>

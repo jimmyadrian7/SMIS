@@ -15,6 +15,11 @@ class Modal extends Component
     public function __construct($id="")
     {
         $this->id = $id;
+        $this->rolesddd = [
+            ['id'=> 1, 'name' => 'Fransiska W.H', 'status' => 'A', 'color'=> 'text-success'],
+            ['id'=> 2, 'name' => 'Marcus Xaverius', 'status' => 'P', 'color'=> 'text-danger'],
+            ['id'=> 3, 'name' => 'Radian Hatta', 'status'=>'A', 'color'=> 'text-success'],
+        ];
     }
 
     /**
@@ -24,6 +29,8 @@ class Modal extends Component
      */
     public function render()
     {
+        //dd($this->rolesddd);
         return view('components.modal');
+        //return view('components.modal', ['rolesddd' => $this->rolesddd]);
     }
 }

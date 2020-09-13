@@ -19,6 +19,9 @@
         <button class="btn btn-success rounded-pill mr-2" data-toggle="modal" data-target="#subject_enrollment">
             Subject Enrollment
         </button>
+        <button class="btn btn-success rounded-pill mr-2" data-toggle="modal" data-target="#teacher_role_management">
+            Teacher Role Management
+        </button>
     </div>
 
     {{-- Modal --}}
@@ -124,7 +127,7 @@
                             <label class="smis-label">School Level</label>
                         </div>
                         <div class="col-sm-4">
-                            <x-form.select :options="['1' => 'Playgroup']" :value="1"/>
+                            <x-form.select :options="['1' => 'Playgroup']" :value="1" />
                         </div>
                         <div class="col-sm-2 text-right">
                             <label class="smis-label">Institution Type</label>
@@ -288,5 +291,76 @@
             </div>
         </x-slot>
     </x-modal>
+
+    <x-modal id="teacher_role_management">
+        <x-slot name="title">
+            <img src="{{ asset('icons/connection_icon.svg') }}" alt="Structure" width="25">
+            Teacher Role Management
+        </x-slot>
+        <x-slot name="body">
+            <div class="h5 text-primary">Assign for roles</div>
+            
+            <hr class="border-primary mb-3">
+            
+            <div class="d-flex row">
+                <div class="col-3 text-primary font-weight-bold">Name</div>
+                <div class="col-3 text-primary font-weight-bold">Status</div>
+                <div class="col-3 text-primary font-weight-bold">Role</div>
+                <div class="col-3 text-primary font-weight-bold">Class</div>
+                
+                <div class="col-3">
+                    Fransiska W.H
+                </div>
+                <div class="col-3 text-success">
+                    Activated
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                    <x-form.select :options="['1' => 'Homeroom', '2'=>'Default']" :value="2"/>
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                    <x-form.select :options="['1' => 'Kelas 1A', '2'=>'Kelas 1B'],'3'=>'None'" :value="2"/>
+                </div>
+
+                {{-- @foreach($rolesddd as $tes)
+                <div class="col-12 d-flex align-items-center mb-3">
+                    <div class="col-3">
+                        {{$tes['name']}}
+                    </div>
+                    <div class="col-3 {{$tes['color']}}">
+                        {{$tes['status']=='A'? 'Active':'Pending'}}
+                    </div>
+                    <div class="col-3 d-flex align-items-center">
+                        <x-form.select :options="['1' => 'Homeroom', '2'=>'Default']" :value="2"/>
+                    </div>
+                    <div class="col-3 d-flex align-items-center">
+                        <x-form.select :options="['1' => 'Kelas 1A', '2'=>'Kelas 1B'],'3'=>'None'" :value="3"/>
+                    </div>
+                </div>
+                @endforeach --}}                
+                <div class="col-12 mb-5 ">
+                    <div class="row">
+                        <div class="text-primary pl-4">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                                <circle cx="8" cy="4.5" r="1"/>
+                            </svg>
+                        </div>
+                        <div class="col-11 pl-1 text-muted">
+                            <a href="#">Teacher's roles</a> can be edited anytime although the staus of the teacheer is still on pending. If a teacher is not assigned for any
+                            specific role, you can simple leave the column before saving the update.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 text-right">
+                    <button class="btn btn-light px-5 rounded-pill" data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-primary px-5 rounded-pill">Save Update</button>
+                </div>
+                
+            </div>
+        </x-slot>
+    </x-modal>
+
     {{-- Modal --}}
 @endsection
