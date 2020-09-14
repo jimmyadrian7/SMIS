@@ -321,22 +321,20 @@
                     <x-form.select :options="['1' => 'Kelas 1A', '2'=>'Kelas 1B'],'3'=>'None'" :value="2"/>
                 </div>
 
-                {{-- @foreach($rolesddd as $tes)
-                <div class="col-12 d-flex align-items-center mb-3">
-                    <div class="col-3">
-                        {{$tes['name']}}
-                    </div>
-                    <div class="col-3 {{$tes['color']}}">
-                        {{$tes['status']=='A'? 'Active':'Pending'}}
-                    </div>
-                    <div class="col-3 d-flex align-items-center">
-                        <x-form.select :options="['1' => 'Homeroom', '2'=>'Default']" :value="2"/>
-                    </div>
-                    <div class="col-3 d-flex align-items-center">
-                        <x-form.select :options="['1' => 'Kelas 1A', '2'=>'Kelas 1B'],'3'=>'None'" :value="3"/>
-                    </div>
+                @foreach($roles as $tes)
+                <div class="col-3">
+                    {{$tes['name']}}
                 </div>
-                @endforeach --}}                
+                <div class="col-3 {{$tes['color']}}">
+                    {{$tes['status']=='A'? 'Active':'Pending'}}
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                    <x-form.select :options="['1' => 'Homeroom', '2'=>'Default']" :value="2"/>
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                    <x-form.select :options="['1' => 'Kelas 1A', '2'=>'Kelas 1B'],'3'=>'None'" :value="2"/>
+                </div>
+                @endforeach            
                 <div class="col-12 mb-5 ">
                     <div class="row">
                         <div class="text-primary pl-4">

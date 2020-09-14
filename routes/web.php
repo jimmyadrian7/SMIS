@@ -23,6 +23,11 @@ Route::get('/dashboard', function () {
 });
 
 Route::get('/modals', function () {
+    $roles = [
+        ['id'=> 1, 'name' => 'Fransiska W.H', 'status' => 'A', 'color'=> 'text-success'],
+        ['id'=> 2, 'name' => 'Marcus Xaverius', 'status' => 'P', 'color'=> 'text-danger'],
+        ['id'=> 3, 'name' => 'Radian Hatta', 'status'=>'A', 'color'=> 'text-success'],
+    ];
     Config::set('navActive', trans('left_bar.classroom'));
-    return view('modals');
+    return view('modals', ['roles' => $roles]);
 });
